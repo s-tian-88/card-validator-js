@@ -1,0 +1,23 @@
+export function cardNumberValidator(number) {
+
+  let sum = 0;
+  let nString = number.toString();
+  let nLength = nString.length;
+  let isEven = nLength % 2 === 0 ? true : false;
+
+  for (let i = 0; i < nLength; i++) {
+    const n = Number(nString[i]);
+    if (isEven && !(i % 2 === 0)) {
+      const result = n * 2;
+      console.log(n)
+      if (result > 9) {
+        result = result - 9;
+      }
+
+      sum += result;
+    } else {
+      sum += n;
+    }
+  }
+  return sum;
+}
