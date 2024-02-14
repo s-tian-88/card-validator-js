@@ -2,7 +2,7 @@
   "name": "testing-organization",
   "packageManager": "yarn@4.1.0",
   "scripts": {
-    "lint": "exlint .",
+    "lint": "eslint .",
     "build": "webpack --config webpack.dev.config",
     "build:prod": "webpack --config webpack.prod.config",
     "start:dev": "webpack serve --config webpack.dev.config",
