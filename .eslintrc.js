@@ -24,5 +24,6 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-restricted-syntax': 'off',
     'no-unused-expressions': 'off',
+    'no-underscore-dangle': 'off',
   },
 };
