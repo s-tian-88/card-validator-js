@@ -1,0 +1,94 @@
+.widget {
+    width: 30%;
+    margin: 100px auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.widget:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.title {
+    margin: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.cards {
+    margin: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cards-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+
+.cards-list-item {
+    display: flex;
+}
+
+.card {
+    width: 64px;
+    height: 64px;
+}
+
+.mir {
+    background-image: url('./img/mir.jpg');
+    background-size: 64px 64px;
+}
+
+.visa {
+    background-image: url('./img/visa.png');
+    background-size: 64px 64px;
+}
+
+.master-card {
+    background-image: url('./img/master-card.png');
+    background-size: 64px 64px;
+}
+
+.american-express {
+    background-image: url('./img/american-express.png');
+    background-size: 64px 64px;
+}
+
+.union-pay {
+    background-image: url('./img/union-pay.png');
+    background-size: 64px 64px;
+}
+
+.disable {
+    opacity: .2;
+}
+
+.form-inline {
+    margin: 5px;
+}
+
+.form-group {
+    font: 1.2rem "Fira Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field {
+    border-radus: 10px;
+    font: inherit;
+    width: 100%;
+}
+
+.input-field:focus {
+    border: 3px solid blue;
+}
+
+.correct {
+    background-color: rgba(11,156,49,1);
+}

@@ -1,7 +1,11 @@
 export function cardNumberValidator(number) {
+  if (number.length < 14 || number.length > 19) {
+    return false;
+  }
+
   let resultSum = 0;
 
-  const cardNumbers = number.toString().split('').map(Number);
+  const cardNumbers = number.split('').map(Number);
 
   for (const [index, value] of cardNumbers.entries()) {
     if (index % 2 === 0) {
@@ -15,14 +19,14 @@ export function cardNumberValidator(number) {
 }
 
 export function cardPaymentSystemValidator(number) {
-  const id = number.toString()[0];
+  const id = number[0];
 
   const paymentCardSystem = {
-    2: 'МИР',
-    3: 'American Express',
-    4: 'Visa',
-    5: 'MasterCard',
-    6: 'UnionPay',
+    2: 'mir',
+    3: 'american-express',
+    4: 'visa',
+    5: 'master-card',
+    6: 'union-pay',
   };
 
   return paymentCardSystem[id];

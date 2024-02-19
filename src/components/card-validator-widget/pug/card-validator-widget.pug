@@ -1,0 +1,8 @@
+div.widget
+    div.card
+        ul.cards-list
+            each item in ['Visa', 'MasterCard']
+                li
+                    span.item = item
+    const renderPug = pug.compileFile('./pug/card-validator-widget.pug');
+    div.form
