@@ -11,7 +11,4 @@ module.exports = merge(common, {
       new CSSMinimizerWebpackPLugin({}),
     ],
   },
-  devServer: {
-    port: 9000,
-  },
 });

@@ -8,6 +8,8 @@ export default class CardValidatorWidget {
     }
 
     this.container = container;
+
+    // this.inputOnChange = this.inputOnChange(this);
   }
 
   start() {
@@ -58,7 +60,7 @@ export default class CardValidatorWidget {
 
     this._timeout = setTimeout(() => {
       if (cardNumberValidator(cardNumber)) {
-        e.target.classList.add('correct');
+        e.target.classList.add('valid');
         const cards = document.querySelectorAll('.card');
         const cardClass = cardPaymentSystemValidator(cardNumber);
 
@@ -70,7 +72,7 @@ export default class CardValidatorWidget {
       } else {
         for (const c of document.querySelectorAll('.card')) {
           c.classList.remove('disable');
-          e.target.classList.remove('correct');
+          e.target.classList.remove('valid');
         }
       }
     }, 300);
