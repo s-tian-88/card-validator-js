@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: 'airbnb-base',
   overrides: [
@@ -25,5 +26,6 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-unused-expressions': 'off',
     'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
