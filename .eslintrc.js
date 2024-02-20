@@ -25,5 +25,6 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-unused-expressions': 'off',
     'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
