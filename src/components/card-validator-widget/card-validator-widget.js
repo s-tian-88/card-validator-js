@@ -8,8 +8,7 @@ export class CardValidatorWidget {
     }
 
     this.container = container;
-
-    // this.inputOnChange = this.inputOnChange(this);
+    this.inputOnChange = this.inputOnChange.bind(this);
   }
 
   static get markup() {

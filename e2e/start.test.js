@@ -1,9 +1,7 @@
 import puppeteer from 'puppeteer';
 // import { fork } from 'child_process';
 
-
 describe('Page start', () => {
-
   let browser;
   let page;
   // let server;
@@ -42,5 +40,4 @@ describe('Page start', () => {
   // afterAll(async () => {
   //   server.kill();
   // });
-
 });
