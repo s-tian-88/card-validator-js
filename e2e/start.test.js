@@ -1,24 +1,24 @@
 import puppeteer from 'puppeteer';
-import { fork } from 'child_process';
+// import { fork } from 'child_process';
 
 
 describe('Page start', () => {
 
   let browser;
   let page;
-  let server;
+  // let server;
 
-  beforeAll(async ()  => {
-    server = fork(`$(__dirname)/e2e/e2e.server.js`);
-    await new Promise((resolve, reject)  => {
-      server.on('error', reject);
-      server.on('message', (message) => {
-        if (message === 'ok') {
-          resolve();
-        }
-      });
-    });
-  });
+  // beforeAll(async ()  => {
+  //   server = fork(`$(__dirname)/e2e/e2e.server.js`);
+  //   await new Promise((resolve, reject)  => {
+  //     server.on('error', reject);
+  //     server.on('message', (message) => {
+  //       if (message === 'ok') {
+  //         resolve();
+  //       }
+  //     });
+  //   });
+  // });
 
   beforeEach(async () => {
     browser = await puppeteer.launch({
@@ -39,8 +39,8 @@ describe('Page start', () => {
     await browser.close();
   });
 
-  afterAll(async () => {
-    server.kill();
-  });
+  // afterAll(async () => {
+  //   server.kill();
+  // });
 
 });
